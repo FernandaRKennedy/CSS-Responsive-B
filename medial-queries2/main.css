@@ -1,3 +1,18 @@
 body {
   background: papayawhip;
 }
+
+
+.transition-demo img:hover {
+  filter: none;
+  transform: scale(1.25) rotate(360deg);
+}
+
+
+.transition-demo img {
+  margin-bottom: .5em;
+  width: 200px;
+  height: 200px;
+  filter: grayscale(100%);
+  transition: 2s;
+}

@@ -21,7 +21,7 @@ body {
 .a,
 .c {
   flex-grow: 1;
-  background-color: lightgrey;
+  background-color: lightgray;
   text-align: center;
 }
 

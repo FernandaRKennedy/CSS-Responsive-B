@@ -1,70 +1,105 @@
 body {
-  background-color: #ffebcd;
+  background: peachpuff;
 }
+
 * {
-  border: 1px solid black;
-}
-/* Default settings for mobile view less than 600px*/
-.container{
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  height: 100vh;
-  gap: 1em;
+  border: 1px solid lightgray;
+
 }
 
-.a, .h{
-  text-align: center;
-  width: 100%;
-}
-.a, .b, .c, .d, .e, .f, .g{
-  height: 15%;
+.bcd,
+.efg {
+
+    background-color: rgb(136, 175, 193);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 15vh;
+    flex-grow: 3;
+ 
+  }
+
+
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+  background-color: #b79b9b;
   flex-grow: 1;
-  text-align: center;
-  background-color: lightgrey;
-}
-.h{
-  height: 55%;
-  background-color: lightgrey;
-}
-.b, .c, .d, .e, .f, .g{
-  width: 25%;
+  gap: 5px;
+  min-height: 15vh;
+  flex-grow: 3;
+  
 }
 
-/* Adjusts viewport to desktop view when less than 600px */
-@media (min-width: 600px){
-  .container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+.container {
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: x-large;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.a {
+  width: 100%;
+  background-color: lightcyan;
+  min-height: 10vh;
+  min-height: 15vh;
+  flex-grow: 3;
+  gap: 5px;
+}
+
+.h {
+  width: 100%;
+  background-color: rgb(32, 109, 109);
+  font-family: sans-serif;
+  font-size: x-large;
+  text-align: center;
+  min-height: 50vh;
+  gap: 5px;
+  min-height: 15vh;
+  flex-grow: 3;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
   .a {
-    grid-row: 1;
-    grid-column: 1/5;
-  }
-  .b, .c, .d{
-    grid-column: 2/3;
-  }
-  .e, .f, .g{
-    grid-column: 3;
-  }
-  .b, .e{
-    grid-column: 1/2;
-  }
-  .c, .f{
-    grid-column: 2/3;
-  }
-  .d, .g{
-    grid-column: 3/4;
-  }
-  .h{
-    grid-row: 2/4;
-    grid-column: 4;
-  }
-  .a, .b, .c, .d, .e, .f, .g, .h{
     width: 100%;
-    height: 100%;
+    background-color: rgb(187, 107, 41);
+    min-height: 40vh;
+  }
+
+  .h {
+    width: 25%;
+    min-height: 60vh;
+  }
+
+  .bcdefg {
+    width: 74%;
+    min-height: 60vh;
+  }
+
+  .bcd,
+  .efg {
+    min-height: 70vh;
+  }
+
+  .b,
+  .c,
+  .d,
+  .e,
+  .f,
+  .g {
+    flex-grow: 1;
   }
 }
